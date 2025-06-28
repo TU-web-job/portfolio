@@ -18,11 +18,11 @@ const Menu = () => {
                 ))}
             </div>
             <h3 className='md:text-3xl text-center-3xl font-bold mb-12 mt-20'>Drink</h3>
-            <div  className="grid gap-8 md:grid-cols-3 sm:frid-cols-2">
+            <div  className="grid gap-8 md:grid-cols-3 sm:grid-cols-2">
                 {drink.map((drinkItem) => (
                     <div key={drinkItem.id} className='bg-gray-100 rounded-lg shadow-md overflow-hidden'>
                         <img src={drinkItem.image} alt={drinkItem.name} className='h-48 w-full object-cover'/>
-                        <div>
+                        <div className='p-4'>
                             <label className='text-xl mb-2 text-center'> {drinkItem.name}</label>
                             <p>price : {drinkItem.price}</p>
                         </div>
