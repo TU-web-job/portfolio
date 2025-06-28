@@ -1,18 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/init/Header";
+import { useState } from 'react';
 import Home from './pages/Home';
 import Cafe from "./pages/Cafe";
 import WorkDetail from "./pages/WorkDetail";
 
-function App() {
-  return(
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cafe" element={<Cafe />} />
-        <Route path="/works/:id" element={<WorkDetail />} />
-      </Routes>
-    </Router>
+const App = () => {
+  const [page, setPage] = useState<"home" | "cafe" | "workDetail">("home");
+  const [selectedWorkId, setSelectedWorkId] = useState<string>("");
+
+  return (
+    <>
+      {page === "home" && (
+        <Home
+          onSelectWork={(id) => {
+            setSelectedWorkId(id);
+            setPage("workDetail");
+          }}
+        />
+      )}
+      {page === "cafe" && (
+        <Cafe onBack={() => setPage("workDetail")} />
+      )}
+      {page === "workDetail" && (
+        <WorkDetail
+          workId={selectedWorkId}
+          onBack={() => setPage("home")}
+          onViewDemo={() => setPage("cafe")}
+        />
+      )}
+    </>
   );
 }
 
