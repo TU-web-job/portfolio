@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { works } from '../data/works';
 type Props = {
     workId: string;
@@ -7,7 +6,6 @@ type Props = {
 }
 
 const WorkDetail = ({workId, onViewDemo, onBack}: Props) => {
-    const { id } = useParams();
     const work = works.find((w) => w.id === workId);
     if(!work) return <p>Not Found</p>;
 
