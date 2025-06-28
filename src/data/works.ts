@@ -4,7 +4,7 @@ export const works = [
         title:"カフェサイトLP",
         description:"TypeScriptで制作したカフェのLPです。",
         image:"/image/cafe.jpg",
-        url:"/Cafe"
+        url:"/cafe"
     },
     {
         id:"2",
