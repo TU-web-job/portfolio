@@ -22,7 +22,7 @@ const App = () => {
       )}
       {page === "workDetail" && (
         <WorkDetail
-          workId={selectedWorkId}
+          id={selectedWorkId}
           onBack={() => setPage("home")}
           onViewDemo={() => setPage("cafe")}
         />

@@ -1,14 +1,12 @@
 import { works } from '../data/works';
 type Props = {
-    workId: string;
+    id: string;
     onViewDemo:() => void;
     onBack:() => void;
 }
 
-const WorkDetail = ({workId, onViewDemo, onBack}: Props) => {
-    const work = works.find((w) => w.id === workId);
-    if(!work) return <p>Not Found</p>;
-
+const WorkDetail = ({id, onViewDemo, onBack}: Props) => {
+    const work = works.find((w) => w.id === id);
     if(!work) return <p>Not Found</p>;
 
     return(
