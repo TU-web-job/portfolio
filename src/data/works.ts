@@ -10,8 +10,8 @@ export const works = [
         id:"2",
         title:"企業向け",
         description:"企業向けのWebサイトを制作しました。",
-        image:"sample2.jpg",
-        url:""
+        image:"/image/buildtop.jpg",
+        url:"/company"
     },
     {
         id:"3",
