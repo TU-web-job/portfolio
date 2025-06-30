@@ -6,8 +6,8 @@ const Contents = () => {
             <section>
                 {content.map((item) =>(
                     <div key={item.id}>
-                    <h2>{item.title}</h2>
-
+                    <h2 className='text-semibold font-gray-200'>{item.title}</h2>
+                    <p className='text-center'>{item.text}</p>
                     </div>
                 ))}
             </section>
