@@ -4,3 +4,11 @@ export type MenuItems = {
     price: number,
     image: string
 };
+
+export type Contents = {
+    id:number,
+    title:string,
+    image:string,
+    text:string,
+    url:string 
+};
