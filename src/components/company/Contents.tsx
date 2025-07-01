@@ -6,12 +6,16 @@ const Contents = () => {
             <section>
                 {content.map((item) =>(
                     <div key={item.id}>
-                    <h2 className='text-semibold font-gray-200'>{item.title}</h2>
-                    <p className='text-center'>{item.text}</p>
+                        <div className='w-50% items-left'>
+                            <h2 className='font-semibold font-gray-200'>{item.title}</h2>
+                            <p className='text-center'>{item.text}</p>
+                        </div>
+                        <div className='w-50% items-right'>
+                            <img src={item.image}/>
+                        </div>                    
                     </div>
                 ))}
             </section>
-            
         </div>
     );
 };
