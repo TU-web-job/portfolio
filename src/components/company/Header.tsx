@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const images = [
-    "/image/build01.jpg",
-    "/image/build02.jpg",
-    "/image/build03.jpg",
+    "/image/build04.jpg",
+    "/image/build05.jpg",
+    "/image/build06.jpg",
 ];
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
                 <img key={index}
                 src={src}
                 alt={`slide-${index}`}
-                className={`absolute top-0 left-0 w-ful h-full object-cover transition-opacity duration-1000 ${
+                className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
                     index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
                 />
