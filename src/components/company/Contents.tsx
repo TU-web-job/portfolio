@@ -21,13 +21,14 @@ const Contents = () => {
                             </>
                         ) : (
                             <>
+                            <div className='md:w-1/2 p-4 flex justify-center'>
+                                <img src={item.image} alt={item.title} className='max-w-full h-auto rounded shadow' />
+                            </div>
                             <div className='md:w-1/2 p-4 text-center md:text-left'>
                                 <h2 className='text-2xl font-semibold mb-4'>{item.title}</h2>
                                 <p className='text-gray-700 whitespace-pre-line'>{item.text}</p>
                             </div>
-                            <div className='md:w-1/2 p-4 flex justify-center'>
-                                <img src={item.image} alt={item.title} className='max-w-full h-auto rounded shadow' />
-                            </div>
+                            
                             </>
                         )}
                     </section>
