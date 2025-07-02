@@ -1,4 +1,4 @@
-import { Contents } from '../types/MenuItems';
+import { Contents, ComFooter } from '../types/MenuItems';
 
 export const content : Contents[] = [
     {
@@ -20,6 +20,24 @@ export const content : Contents[] = [
         title:"全国各地対応可能",
         image:"/image/build003.jpg",
         text:"各地域に支店を構え全国各地で施工可能にし、お客様のご要望に寄り添い満足いただいています。",
+        url:""
+    }
+]
+
+export const footerList:ComFooter[] = [
+    {
+        id:1,
+        name:"Top",
+        url:""
+    },
+    {
+        id:2,
+        name:"Menu",
+        url:""
+    },
+    {
+        id:3,
+        name:"portfolio",
         url:""
     }
 ]

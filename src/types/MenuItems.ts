@@ -12,3 +12,9 @@ export type Contents = {
     text:string,
     url:string 
 };
+
+export type ComFooter = {
+    id:number,
+    name:string,
+    url:string
+}
