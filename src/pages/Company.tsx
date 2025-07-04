@@ -1,5 +1,6 @@
 import Header from '../components/company/Header'
 import Contents from '../components/company/Contents';
+import WorkList from '../components/company/WorkList';
 import Footer from '../components/company/Footer';
 
 type Props = {
@@ -10,6 +11,7 @@ const Company = ({onBack}: Props) => {
         <>
         <Header />
         <Contents />
+        <WorkList /> 
         <Footer />
         </>
     );

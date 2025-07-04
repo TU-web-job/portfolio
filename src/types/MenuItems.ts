@@ -17,4 +17,4 @@ export type ComFooter = {
     id:number,
     name:string,
     url:string
-}
+};
