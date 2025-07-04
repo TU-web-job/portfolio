@@ -1,4 +1,4 @@
-import { Contents, ComFooter } from '../types/MenuItems';
+import { Contents, ComFooter, TenpoList } from '../types/MenuItems';
 
 export const content : Contents[] = [
     {
@@ -84,5 +84,56 @@ export const workList: Contents[] = [
         image:"/image/buildList1.jpg",
         text: "入居者様が快適に過ごせるよう、共用部・外壁の清掃工事を実施しました。\n建物全体の美観が向上し、管理会社様・入居者様ともに大変喜んでいただけました。",
         url:""
+    },
+]
+
+export const tenpoList:TenpoList[] = [
+    {
+        id:1,
+        name:"北海道支店",
+        area:"北海道全域",
+        phone:"01-1234-5678",
+        address:"北海道道産子五稜星4869",
+        map:""
+    },
+    {
+        id:2,
+        name:"東北支店",
+        area:"東北地域",
+        phone:"02-2222-4444",
+        address:"岩手県仙台市ねぶた郡きりたんぽ1122",
+        map:""
+    },
+    {
+        id:3,
+        name:"日光支店",
+        area:"北関東３県",
+        phone:"03-1234-9876",
+        address:"群馬県水戸市日光10409",
+        map:""
+    },
+    {
+        id:4,
+        name:"関東支店",
+        area:"一都三県",
+        phone:"04-1111-1111",
+        address:"千葉県さいたま市みなとみらい1-1-1",
+        map:""
+    },
+    {
+        id:5,
+        name:"東京本店",
+        area:"東京都",
+        phone:"090-11120-2229",
+        address:"東京都23区多摩郡1010",
+        map:""
+    },
+    {
+        id:6,
+        name:"北越支店",
+        area:"新潟県、富山県、石川県、福井県",
+        phone:"11-2222-4444",
+        address:"福井県富山市かなざわ町コシヒカリ5555",
+        map:""
     },
 ]

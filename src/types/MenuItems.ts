@@ -18,3 +18,12 @@ export type ComFooter = {
     name:string,
     url:string
 };
+
+export type TenpoList = {
+    id:number,
+    name:string,
+    area:string,
+    phone:string,
+    address:string,
+    map:string
+};
