@@ -6,22 +6,32 @@ const Tenpo = () => {
             <h2 className="text-4xl font-bold">支店一覧</h2>
             <div>
                 {tenpoList.map ((tenpo) => (
-                    <div key={tenpo.id}>
-                        <h3 className="font-semibold">{tenpo.name}</h3>
-                        <table>
+                    <div key={tenpo.id} className="mb-8">
+                        <h3 className="font-semibold text-center mb-6">{tenpo.name}</h3>
+                        <div className="flex flex-col md:flex-row gap-4 items-start">
+                        <table className="md:w-1/2">
                             <tr>
                                 <th>担当エリア : </th>
-                                <td>{tenpo.area}</td>
+                                <td className="text-left">{tenpo.area}</td>
                             </tr>
                             <tr>
                                 <th>住所 : </th>
-                                <td>{tenpo.address}</td>
+                                <td className="text-left">{tenpo.address}</td>
                             </tr>
                             <tr>
                                 <th>電話番号 : </th>
-                                <td>{tenpo.phone}</td>
+                                <td className="text-left">{tenpo.phone}</td>
                             </tr>
                         </table>
+                        <div className="md:w-1/2">
+                            <iframe 
+                                src={tenpo.map}
+                                className="w-full h-64 rounded shadow"
+                                allowFullScreen
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+                        </div>
                     </div>
                 ))}
             </div>
