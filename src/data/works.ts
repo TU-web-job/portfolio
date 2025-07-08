@@ -17,7 +17,7 @@ export const works = [
         id:"3",
         title:"サービス紹介",
         description:"サービス内容をこちらでまとめました。",
-        image:"sample3",
-        url:""
+        image:"/image/petTop.jpg",
+        url:"/pet"
     },
 ];
