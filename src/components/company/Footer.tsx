@@ -8,7 +8,7 @@ const Footer = () => {
                 <ul className="flex flex-col md:flex-row gap-4">
                     {footerList.map((list) => {
                         return(
-                            <li key={list.id}><a className="hover:underline">{list.name}</a></li>
+                            <li key={list.id}><a className="hover:underline" href={list.url}>{list.name}</a></li>
                         );
                     })}
                 </ul>

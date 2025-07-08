@@ -27,3 +27,9 @@ export type TenpoList = {
     address:string,
     map:string
 };
+
+export type FormList = {
+    id:number,
+    headLabel:string,
+    bodyLabel:string
+};

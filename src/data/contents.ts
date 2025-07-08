@@ -1,4 +1,4 @@
-import { Contents, ComFooter, TenpoList } from '../types/MenuItems';
+import { Contents, ComFooter, TenpoList, FormList } from '../types/MenuItems';
 
 export const content : Contents[] = [
     {
@@ -182,5 +182,57 @@ export const tenpoList:TenpoList[] = [
         phone:"10-1833-1833",
         address:"沖縄県シーサー村シークワーサー1833",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12378.53597598708!2d128.2202872231819!3d26.715964537903993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e443d97b04d6af%3A0xa5f29547f006ac13!2z44KE44KT44Gw44KL5Zu956uL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1751972391220!5m2!1sja!2sjp"
+    }
+]
+export const formList:FormList[] = [
+    {
+        id:1,
+        headLabel:"雇用形態",
+        bodyLabel:"正社員, 派遣社員, アルバイト, パート"
+    },
+    {
+        id:2,
+        headLabel:"募集職種",
+        bodyLabel:"現場監督, 作業員, 施工管理, リフォーム営業, 設計士, 事務, 現場事務, その他"
+    },
+    {
+        id:3,
+        headLabel:"仕事内容",
+        bodyLabel:"現場管理、工程管理、新規営業、既存営業、電話対応など職種により様々です。"
+    },
+    {
+        id:4,
+        headLabel:"勤務地",
+        bodyLabel:"全支店募集しております。ご希望の勤務地を考慮します。"
+    },
+    {
+        id:5,
+        headLabel:"勤務時間",
+        bodyLabel:"8:00~17:00 \n 9:00~18:00 \n ※現場によります。"
+    },
+    {
+        id:6,
+        headLabel:"休日・休暇",
+        bodyLabel:"固定：日曜日・祝日 \n 変動：現場、職種により異なります。"
+    },
+    {
+        id:7,
+        headLabel:"給与",
+        bodyLabel:"正社員:25万円~ \n 派遣、アルバイト:12000円/日 \n パート:1200円/時"
+    },
+    {
+        id:8,
+        headLabel:"昇給・賞与",
+        bodyLabel:"昇給: 年1回 \n 賞与: 年2回（夏・冬）"
+    },
+    {
+        id:9,
+        headLabel:"福利厚生",
+        bodyLabel:"提携先の施設を割安でご利用いただけます。 \n ※例）ホテル１泊、フェイシャルエステなど"
+    },
+    {
+        id:10,
+        headLabel:"応募方法",
+        bodyLabel:"当ホームページ、各SNS、お電話にて随時受け付けております。"
     }
 ]
