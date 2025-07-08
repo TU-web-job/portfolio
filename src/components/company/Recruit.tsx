@@ -3,7 +3,7 @@ import { formList } from "../../data/contents";
 
 const Recruit = () => {
     return(
-        <div className="p-6">
+        <div className="p-6 bg-gray-100">
             <h2 className="font-bold text-4xl text-center mb-4">求人情報</h2>
             <form>
                 {formList.map((item) =>(
