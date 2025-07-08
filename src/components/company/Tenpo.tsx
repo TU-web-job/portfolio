@@ -7,7 +7,7 @@ const Tenpo = () => {
             <div>
                 {tenpoList.map ((tenpo) => (
                     <div key={tenpo.id} className="mb-8">
-                        <h3 className="font-semibold text-center mb-6">{tenpo.name}</h3>
+                        <h3 className="font-semibold text-center mb-6 m-4">{tenpo.name}</h3>
                         <div className="flex flex-col md:flex-row gap-4 items-start">
                         <table className="md:w-1/2">
                             <tr>

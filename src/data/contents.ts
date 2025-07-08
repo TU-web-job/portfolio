@@ -94,15 +94,15 @@ export const tenpoList:TenpoList[] = [
         area:"北海道全域",
         phone:"01-1234-5678",
         address:"北海道道産子五稜星4869",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11898.24480862433!2d140.74374172044665!3d41.7946694419276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef46bb53c0eb3%3A0x75f5f82028f1a89e!2z5LqU56ic6YOt44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1751971277173!5m2!1sja!2sjp"
     },
     {
         id:2,
         name:"東北支店",
         area:"東北地域",
         phone:"02-2222-4444",
-        address:"岩手県仙台市ねぶた郡きりたんぽ1122",
-        map:""
+        address:"岩手県仙台市ねぷた郡きりたんぽ1122",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12117.577540921684!2d140.47374511943624!3d40.59912144447358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b01208f88e1c3%3A0x59ebc351d1c2bd93!2z5byY5YmN44Gt44G344Gf44G-44Gk44KK77yI6aeF5YmN44Kz44O844K577yJ!5e0!3m2!1sja!2sjp!4v1751971518443!5m2!1sja!2sjp"
     },
     {
         id:3,
@@ -110,7 +110,7 @@ export const tenpoList:TenpoList[] = [
         area:"北関東３県",
         phone:"03-1234-9876",
         address:"群馬県水戸市日光10409",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12786.08061054882!2d139.58846831635628!3d36.75808735799028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601fa6c553212035%3A0xab505b717af00e94!2z5pel5YWJ5p2x54Wn5a6u!5e0!3m2!1sja!2sjp!4v1751971798204!5m2!1sja!2sjp"
     },
     {
         id:4,
@@ -118,7 +118,7 @@ export const tenpoList:TenpoList[] = [
         area:"一都三県",
         phone:"04-1111-1111",
         address:"千葉県さいたま市みなとみらい1-1-1",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13000.389312877185!2d139.63286696536872!3d35.45238481440838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cf885807149%3A0x94947dd82acc3d73!2z5qiq5rWc6LWk44Os44Oz44Ks5YCJ5bqr!5e0!3m2!1sja!2sjp!4v1751971571662!5m2!1sja!2sjp"
     },
     {
         id:5,
@@ -126,7 +126,7 @@ export const tenpoList:TenpoList[] = [
         area:"東京都",
         phone:"090-11120-2229",
         address:"東京都23区多摩郡1010",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12962.672235319158!2d139.74252121554252!3d35.68517456319745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2z55qH5bGF!5e0!3m2!1sja!2sjp!4v1751971731929!5m2!1sja!2sjp"
     },
     {
         id:6,
@@ -134,7 +134,7 @@ export const tenpoList:TenpoList[] = [
         area:"新潟県、富山県、石川県、福井県",
         phone:"11-2222-4444",
         address:"福井県富山市かなざわ町コシヒカリ5555",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12768.100360998946!2d136.74810761643909!3d36.86581825750155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff76446afea0f79%3A0xd921b58c05b71f39!2z55-z5bed55yMIOWNg-mHjOa1nOOBquOBjuOBleODieODqeOCpOODluOCpuOCp-OCpA!5e0!3m2!1sja!2sjp!4v1751971877880!5m2!1sja!2sjp"
     },
     {
         id: 7,
@@ -142,7 +142,7 @@ export const tenpoList:TenpoList[] = [
         area:"愛知県、岐阜県、三重県、静岡県",
         phone:"05-3456-7890",
         address:"岐阜県名古屋市津-お茶っぱ11201",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13043.486882802497!2d136.8894100151701!3d35.184749665836144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376cc15a24d43%3A0xd6866a6ed91b1a31!2z6YeR44K344Oj44OB5qiq5LiBIOato-mWgOOCqOODquOCoiDnvqnnm7Tjgr7jg7zjg7M!5e0!3m2!1sja!2sjp!4v1751971992314!5m2!1sja!2sjp"
     },
     {
         id: 8,
@@ -150,7 +150,7 @@ export const tenpoList:TenpoList[] = [
         area:"大阪府、京都府、兵庫県、奈良県、和歌山県、滋賀県",
         phone:"06-9876-5432",
         address:"和歌山県大仏市神戸牛おいでやす-なんでやねん01",
-        map: ""
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13024.865621811243!2d134.81888981525591!3d35.30060396521343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355559b9d0af50c7%3A0x8d0d9d544c1350c9!2z56u555Sw5Z-O6Leh!5e0!3m2!1sja!2sjp!4v1751972113615!5m2!1sja!2sjp"
     },
     {
         id: 9,
@@ -158,7 +158,7 @@ export const tenpoList:TenpoList[] = [
         area:"広島県、岡山県、山口県、鳥取県、島根県",
         phone:"08-5678-1234",
         address:"山口県島根市岡ちゃん砂丘じゃけん1-2-3",
-        map: ""
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13459190.590522056!2d125.39247253031873!3d34.55519597197636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ae3047ec76d8f%3A0x357228f7d0b5d590!2z5Zq05bO256We56S-!5e0!3m2!1sja!2sjp!4v1751972233145!5m2!1sja!2sjp"
     },
     {
         id: 10,
@@ -166,14 +166,14 @@ export const tenpoList:TenpoList[] = [
         area:"香川県、愛媛県、高知県、徳島県",
         phone:"09-3456-7890",
         address:"高知県うどん市みかん村阿波踊り",
-        map: ""
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103533.43018690587!2d133.78892540697234!3d34.3279356462677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553e1f25cbb059b%3A0xc4f78ca794f95998!2z54Cs5oi45aSn5qmL!5e0!3m2!1sja!2sjp!4v1751972286330!5m2!1sja!2sjp"
     },{
         id:11,
         name:"九州支店",
         area:"福岡県、佐賀市、長崎県、熊本県、大分県、宮崎県、鹿児島県",
         phone:"94-9494-9494",
         address:"佐賀県博多市桜島熊もん-マンゴーテンボス94",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54381.50374352509!2d130.60888610086369!3d31.583325968619867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353ef572006aed97%3A0x9765ad14cf618e94!2z5qGc5bO2!5e0!3m2!1sja!2sjp!4v1751972315670!5m2!1sja!2sjp"
     },
     {
         id:12,
@@ -181,6 +181,6 @@ export const tenpoList:TenpoList[] = [
         area:"沖縄県（離島含む）",
         phone:"10-1833-1833",
         address:"沖縄県シーサー村シークワーサー1833",
-        map:""
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12378.53597598708!2d128.2202872231819!3d26.715964537903993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e443d97b04d6af%3A0xa5f29547f006ac13!2z44KE44KT44Gw44KL5Zu956uL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1751972391220!5m2!1sja!2sjp"
     }
 ]
