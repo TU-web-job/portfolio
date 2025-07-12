@@ -33,3 +33,9 @@ export type FormList = {
     headLabel:string,
     bodyLabel:string
 };
+
+export type petMain = {
+    id:number,
+    text:string,
+    image:string
+};
