@@ -39,3 +39,11 @@ export type petMain = {
     text:string,
     image:string
 };
+
+export type DogType = {
+    id:number,
+    name:string,
+    description:string,
+    image:string,
+    sound:string
+};

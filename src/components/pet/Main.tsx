@@ -72,12 +72,20 @@ const FadeInImage = ({src}: {src: string}) => {
         return() => observer.disconnect();
     },[]);
     return(
-        <img
-        ref={imgRef}
-        src={src}
-        className={`w-full aspect-[4/3] object-cover rounded shadow 
-            transition-opacity duration-700 ease-out 
-            ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        />
+        <div 
+            ref={imgRef}
+            className={`w-full aspect-[4/3] rounded shadow overflow-hidden
+                bg-fray-300 dark:bg-gray-800 relative transform transition-all duration-1000 ease-out
+                ${isVisible ? 'opacity-100 blur-0 scale-100' : 'opacity-0 blur-md scale-95'}`}
+        >
+            <img
+            ref={imgRef}
+            src={src}
+            className={`w-full aspect-[4/3] object-cover rounded shadow 
+                transition-opacity duration-700 ease-out 
+                ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            />
+            <div className='absolute inset-0 bg-gradient-to-t from-black/30 to-transparent'></div>
+        </div>
     );
 };

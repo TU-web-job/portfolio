@@ -1,4 +1,4 @@
-import { petMain } from '../types/MenuItems';
+import { petMain, DogType } from '../types/MenuItems';
 
 export const petmain:petMain[] = [
     {id:1, text:"", image:"/image/dog1.webp"},
@@ -13,4 +13,21 @@ export const petmain:petMain[] = [
     {id:10, text:"", image:"/image/dog10.jpg"},
     {id:11, text:"", image:"/image/dog11.jpg"},
     {id:12, text:"", image:"/image/dog12.jpg"}
+];
+
+export const dogType:DogType[] = [
+    {
+        id:1,
+        name:"Shiba Inu",
+        description:"A small, agile dog from Japan, loyal and intelligent.",
+        image:"/image/shiba.webp",
+        sound:"/sounds/shiba.mp3"
+    },
+    {
+        id:2,
+        name:"Golden Retriever",
+        description:"Friendly, intelligent, and devoted family dog.",
+        image:"/image/golden.webp",
+        sound:"/sounds/golden.mp3"
+    }
 ];
