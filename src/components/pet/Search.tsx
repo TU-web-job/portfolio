@@ -11,29 +11,59 @@ const dogData: {[key:string]: string} = {
     'コーギー': 'corgi',
     'トイプードル':'poodle/toy',
     'シュナウザー':'schnauzer',
-    'ビションフリーゼ':'bichon',
 };
+
+const bichon = [
+    '/image/bichon.jpg',
+    '/image/bichon1.jpg',
+    '/image/bichon2.jpg',
+];
+const bichonName = ['ビションフリーゼ', 'ビション', 'フリーゼ', 'ビショ', 'びしょん', 'びしょ', 'フリー', 'ビ',];
 
 const Search = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const [error, setError] = useState('');
+    const [breedName, setBreedName] = useState('');
 
     const handleSearch = async() => {
-        const breed = dogData[searchTerm];
-        if(!breed){
-            setError('お探しのワンちゃんは旅に出てます✈️');
+        if(!searchTerm.trim()){
+            setError('未入力ではワンちゃんを探せません...');
             setImageUrl('');
+            setBreedName('');
             return;
         }
-        setError('');
+
+        const search = searchTerm.trim();
+        if(bichonName.some(keyword => keyword.includes(search) || search.includes(keyword))){
+            const randomIndex = Math.floor(Math.random() * bichon.length);
+            setImageUrl(bichon[randomIndex]);
+            setError('');
+            setBreedName('ビションフリーゼ');
+            return;
+        }
+        const foundKey = Object.keys(dogData).find(key => key.includes(search));
+        if(!foundKey){
+            setError('お探しのワンちゃんは旅に出てます✈️');
+            setImageUrl('');
+            setBreedName('');
+            return;
+        }
+        const breedPath = dogData[foundKey];
+        
         try{
-            const res = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`);
-            const data = await res.json();
-            setImageUrl(data.message);
+            const res = await fetch(`https://dog.ceo/api/breed/${breedPath}/images/random`);
+            const imgData = await res.json();
+            setImageUrl(imgData.message);
+            setError('');
+            setBreedName(foundKey);
+            console.log(res);
+            
         } catch(err) {
             console.error(err);
             setError('画像がありません。');
+            setImageUrl('');
+            setBreedName('');
         }
     };
 
@@ -57,7 +87,7 @@ const Search = () => {
                         src={imageUrl}
                         className='w-full aspect-[4/3] object-cover rounded shadow'
                     />
-                    <h3 className='text-xl font-semibold mt-2 text-gray-500 text-center'>{searchTerm}</h3>
+                    <h3 className='text-xl font-semibold mt-2 text-gray-500 text-center'>{breedName}</h3>
                 </div>
             )}
         </div>
