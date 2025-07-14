@@ -1,3 +1,4 @@
+import Footer from "../components/pet/Footer";
 import Header from "../components/pet/Header";
 import Main from "../components/pet/Main";
 import Search from "../components/pet/Search";
@@ -12,6 +13,7 @@ const Pet = ({onBack}: Props) => {
         <Header />
         <Main />
         <Search />
+        <Footer />
         </>
     )
 };
