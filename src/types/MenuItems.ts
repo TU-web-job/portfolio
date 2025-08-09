@@ -47,3 +47,11 @@ export type DogType = {
     image:string,
     sound:string
 };
+
+export type PetImg = {
+    id:number,
+    image:string,
+    title:string,
+    date:Date,
+    text:string,
+};

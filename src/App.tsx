@@ -3,16 +3,18 @@ import Home from './pages/Home';
 import Cafe from "./pages/Cafe";
 import Company from './pages/Company';
 import Pet from './pages/Pet';
+import Diary from './pages/Diary';
 import WorkDetail from "./pages/WorkDetail";
 import { works } from './data/works';
 
 const App = () => {
-  const [page, setPage] = useState<"home" | "cafe" | "workDetail" | "company" | "pet">("home");
+  const [page, setPage] = useState<"home" | "cafe" | "workDetail" | "company" | "pet" | "diary">("home");
   const [selectedWorkId, setSelectedWorkId] = useState<string>("");
-  const pageMap: Record<string, "cafe" | "company" | "pet"> = {
+  const pageMap: Record<string, "cafe" | "company" | "pet" | "diary"> = {
     "/cafe":"cafe",
     "/company":"company",
-    "/pet":"pet"
+    "/pet":"pet",
+    "/diary":"diary"
   };
 
   const handleViewDemo = () => {
@@ -46,6 +48,9 @@ const App = () => {
       )}
       {page === "pet" && (
         <Pet onBack={() => setPage("workDetail")} />
+      )}
+      {page === "diary" && (
+        <Diary onBack={() => setPage("workDetail")} />
       )}
       {page === "workDetail" && (
         <WorkDetail

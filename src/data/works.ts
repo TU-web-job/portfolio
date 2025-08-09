@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const works = [
     {
         id:"1",
@@ -15,9 +17,16 @@ export const works = [
     },
     {
         id:"3",
-        title:"サービス紹介",
-        description:"サービス内容をこちらでまとめました。",
+        title:"ワンワンサービス",
+        description:"ワンちゃんたちに癒されよう。",
         image:"/image/petTop.jpg",
         url:"/pet"
     },
+    {
+        id:"4",
+        title:"ペットダイアリー",
+        description:"みんなの大好きなペットの成長記録をまとめよう",
+        image:"/image/dog11.jpg",
+        url:"/diary"
+    }
 ];
