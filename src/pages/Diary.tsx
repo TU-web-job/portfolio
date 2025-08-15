@@ -1,3 +1,4 @@
+import Footer from "../components/diary/Footer";
 import Header from "../components/diary/Header";
 import Section from "../components/diary/Section";
 
@@ -10,6 +11,7 @@ const Diary = ({onBack}:Props) => {
         <>
             <Header />
             <Section />
+            <Footer />
         </>
     );
 }
