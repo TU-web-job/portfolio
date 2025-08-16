@@ -5,6 +5,7 @@ const Section = () => {
 
     const [pets, setPets] = useState<PetImg[]>([]);
     const [newPet, setNewPet] = useState({title: "", date:"", text:"", image:""});
+    const [showForm, setShowForm] = useState(false);
 
     useEffect(() => {
         fetch("http://localhost:5001/Diary")
@@ -22,6 +23,7 @@ const Section = () => {
         const added = await res.json();
         setPets([...pets, added]);
         setNewPet({ title:"", date:"", text:"", image:""});
+        setShowForm(false);
     };
 
     return(
@@ -41,8 +43,12 @@ const Section = () => {
                         </div>
                     </div>
                 ))}
+                <div className="bg-blue-300 shadow-md mb-4 rounded flex justify-center items-center cursor-pointer text-4xl font-bold"
+                onClick={() => setShowForm(!showForm)}>
+                    +
+                </div>
             </div>
-
+            {showForm && (
             <div className="mt-6 p-4 bg-white shadow-md rounded-md">
                 <h3 className="font-bold mb-2">新規追加する</h3>
                 <input 
@@ -72,9 +78,9 @@ const Section = () => {
                     value={newPet.image}
                     onChange={e => setNewPet({ ...newPet, image:e.target.value})}
                 />
-                <button className="bg-blue-500 px-4 py-2 rounded" onClick={handleAddPet}> + </button>
+                <button className="bg-blue-500 px-4 py-2 rounded" onClick={handleAddPet}> Add Now </button>
             </div>
-
+            )}
         </div>
     );
 };
